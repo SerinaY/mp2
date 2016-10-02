@@ -73,6 +73,61 @@ var main=function() {
   })
       .setTween("#anip", 1, {css:{scale:0.7,top:'-=50px',opacity:0.5}})
       .addTo(controller);
+  var disp = new ScrollMagic.Scene({
+    triggerHook:0.5,
+    triggerElement: "#section_12",
+    offset:100,
+    duration:200
+  })
+      .setTween(".ql", 1, {css:{scale:0.9,top:'+=80px'}})
+      .addTo(controller);
+  var disp = new ScrollMagic.Scene({
+    triggerHook:0.5,
+    triggerElement: "#section_12",
+    duration:200
+  })
+      .setTween(".qr", 1, {css:{scale:0.9,bottom:'+=130px'}})
+      .addTo(controller);
+  var jap = new ScrollMagic.Scene({
+    triggerHook:0.5,
+    triggerElement: "#section_3",
+    offset:300
+    //duration:200
+  })
+      .setTween(".frame", 0.5, {css:{top:'-=10%', display:'block'}})
+      .addTo(controller);
+  var pin = new ScrollMagic.Scene({
+    triggerHook:0.5,
+    triggerElement: "#section_4",
+    offset:300,
+    //duration:50
+  })
+      .setTween("#pin1", 0.5, {css:{color:'white'}})
+      .addTo(controller);
+  var b = new ScrollMagic.Scene({
+    triggerHook:0.5,
+    triggerElement: ".footer",
+    offset:-200,
+    //duration:50
+  })
+      .setTween(".b1", 0.5, {rotationY: 180})
+      .addTo(controller);
+  var b = new ScrollMagic.Scene({
+    triggerHook:0.5,
+    triggerElement: ".footer",
+    offset:-160,
+    //duration:50
+  })
+      .setTween(".b2", 0.5, {rotationY: 180})
+      .addTo(controller);
+  var b = new ScrollMagic.Scene({
+    triggerHook:0.5,
+    triggerElement: ".footer",
+    offset:-110,
+    //duration:50
+  })
+      .setTween(".b3", 0.5, {rotationY: 180})
+      .addTo(controller);
 
   var controllerp = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
 
@@ -81,7 +136,7 @@ var main=function() {
       .setTween("#section_1 > div", {y: "80%", ease: Linear.easeNone})
       .addTo(controllerp);
 
-  var modal = document.getElementById('myModal');
+/*  var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
   var btn = document.getElementById("myBtn");
@@ -97,7 +152,7 @@ var main=function() {
     if (event.target == modal) {
       modal.style.display = "none";
     }
-  }
+  }*/
 
 
   function indicate(currentScroll) {

@@ -31,8 +31,8 @@ $flexvideo-ratio-widescreen: 16 by 9 !default;
 /// @param {List} $ratio [$flexvideo-ratio] - Ratio to use for the container, formatted as `x by y`.
 @mixin flex-video($ratio: $flexvideo-ratio) {
   position: relative;
-  height: 0;
-  padding-bottom: flex-video($ratio);
+  height: auto;
+  padding-bottom: 6%;
   margin-bottom: $flexvideo-margin-bottom;
   overflow: hidden;
 

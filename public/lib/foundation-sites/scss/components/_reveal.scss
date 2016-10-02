@@ -8,7 +8,7 @@
 
 /// Default background color of a modal.
 /// @type Color
-$reveal-background: $white !default;
+$reveal-background: rgba(0,0,0,0);
 
 /// Default width of a modal, with no class applied.
 /// @type Number
@@ -28,7 +28,7 @@ $reveal-border: 1px solid $medium-gray !default;
 
 /// Default radius for modal.
 /// @type Number
-$reveal-radius: $global-radius !default;
+$reveal-radius: 6px;
 
 /// z-index for modals. The overlay uses this value, while the modal itself uses this value plus one.
 /// @type Number
@@ -59,7 +59,7 @@ $reveal-overlay-background: rgba($black, 0.45) !default;
   z-index: $reveal-zindex + 1;
   padding: $reveal-padding;
   border: $reveal-border;
-  background-color: $reveal-background;
+  background-color: rgba(255,255,255,0);
   border-radius: $reveal-radius;
 
   @include breakpoint(medium) {
@@ -76,6 +76,7 @@ $reveal-overlay-background: rgba($black, 0.45) !default;
   > :last-child {
     margin-bottom: 0;
   }
+
 }
 
 /// Adjusts the width of a modal.
@@ -167,6 +168,32 @@ $reveal-overlay-background: rgba($black, 0.45) !default;
 
     &.without-overlay {
       position: fixed;
+    }
+    bottom: 20%;
+    padding: 20px;
+    width: 55%;
+
+    @include breakpoint(small down){
+      width: 95%;
+      left: 2.5%;
+    }
+    p{
+      position: relative;
+
+      text-align: left;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      font-family: 'EB Garamond', serif;
+
+      color: white;
+      font-size: 20px;
+      line-height: 130%;
+      @include breakpoint(small down){
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
     }
   }
 }
