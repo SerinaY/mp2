@@ -57,9 +57,14 @@ var main=function() {
       //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
       .addTo(controller);
 
+  var oldwidth=$(window).width();
   $(window).resize(function() {
     //resize just happened, pixels changed
-    location.reload();
+    var tempW=$(window).width();
+    if(tempW!= oldwidth) {
+      location.reload();
+      oldwidth=tempW;
+    }
   });
   var disp = new ScrollMagic.Scene({
     triggerHook:0.5,
