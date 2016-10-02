@@ -31,9 +31,6 @@ var main=function() {
         }
       }
 
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
 });
 
@@ -46,15 +43,13 @@ var main=function() {
 
 
   })
-      .setTween("nav", 0.5, {height:'170px'}) // trigger a TweenMax.to tween
-      //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+      .setTween("nav", 0.5, {height:'170px'})
       .addTo(controller);
   var header = new ScrollMagic.Scene({
     triggerHook:0.1,
     triggerElement: "#trigger1",
   })
-      .setTween("header", 0.5, {scale:0.8}) // trigger a TweenMax.to tween
-      //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+      .setTween("header", 0.5, {scale:0.8})
       .addTo(controller);
 
   var oldwidth=$(window).width();
@@ -67,7 +62,7 @@ var main=function() {
   });
   var disp = new ScrollMagic.Scene({
     triggerHook:0.5,
-    triggerElement: "#trigger1",
+    triggerElement: "#tri",
     offset:300,
     duration:200
   })
@@ -86,7 +81,7 @@ var main=function() {
     triggerElement: "#section_12",
     duration:200
   })
-      .setTween(".qr", 1, {css:{scale:0.9,bottom:'+=130px'}})
+      .setTween(".qr", 1, {css:{scale:0.9,bottom:'+=100px'}})
       .addTo(controller);
   var jap = new ScrollMagic.Scene({
     triggerHook:0.5,
@@ -99,7 +94,7 @@ var main=function() {
   var pin = new ScrollMagic.Scene({
     triggerHook:0.5,
     triggerElement: "#section_4",
-    offset:300,
+    offset:200,
     //duration:50
   })
       .setTween("#pin1", 0.5, {css:{color:'white'}})
@@ -136,23 +131,7 @@ var main=function() {
       .setTween("#section_1 > div", {y: "80%", ease: Linear.easeNone})
       .addTo(controllerp);
 
-/*  var modal = document.getElementById('myModal');
 
-// Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
-
-  btn.onclick = function() {
-    event.preventDefault();
-    modal.style.display = "block";
-  }
-
-
-// When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }*/
 
 
   function indicate(currentScroll) {
