@@ -1,1 +1,51 @@
-// Insert your mixins
+@mixin hover-color($color){
+  &:hover{
+    color: $color;
+    background-color: $highlight;
+  }
+}
+@mixin hover-text($color){
+  &:hover{
+    color: $color;
+  }
+}
+
+@mixin v-center(){
+  &{
+    position: absolute;
+    top: 50%;
+    transrm: translateY(-50%);
+  }
+}
+@mixin h2-style(){
+  &{
+    font-size: 120px;
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-align: center;
+
+
+  }
+}
+@mixin p-style(){
+  &{
+
+    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+    line-height: 150%;
+  }
+}
+@mixin title-resize(){
+  &{
+    @include breakpoint(medium down){
+      font-size: 80px;
+      //transform: translateY(100%);
+
+    }
+    @include breakpoint(small down){
+      font-size: 60px;
+      //transform: translateY(-20%);
+
+    }
+  }
+}

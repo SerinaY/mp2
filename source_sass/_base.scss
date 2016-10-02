@@ -1,20 +1,483 @@
 // Add any custom Sass & CSS here
-
+/*
 body{
 	@include breakpoint(medium down){
 		border: 5px black solid;
 	}
+}*/
+
+nav {
+  overflow-y: scroll;
+  background-color: $dark-blue;
+  opacity: 0.95;
+  width: 100%;
+  height: 200px;
+
+  position: fixed;
+  z-index: 1000;
+  padding-top: 40px;
+
+  header{
+    font-size: $size-big;
+    color: $blue;
+    margin-left: 50px;
+    position: fixed;
+    top:-20px;
+    font-family: $font-big;
+    z-index: 2000;
+
+  }
+  @media only screen and (max-width: 520px) {
+    header {
+      font-size:60px;
+      top:20px;
+      left: 20px;
+    }
+  }
+  ._menu {
+    position: absolute;
+    bottom: 7px;
+    font-size: $size-p;
+
+    div {
+      background-color: transparent;
+      padding: 0px;
+      text-align: center;
+      border-radius: 5px;
+      padding: 8px;
+      @include hover-color($blue);
+      a {
+        //background-color: transparent;
+        display: inline;
+        width: 30px;
+
+        color: lighten($blue, 25);
+        text-decoration: none;
+
+        font-family: $font-p;
+        @include hover-text($blue);
+      }
+
+
+    }
+    .active-button {
+      //display: none;
+      background-color: $highlight;
+      //padding: 15px;
+      @include hover-color($blue);
+    }
+
+  }
 }
 
-.llama {
-  background: url('../media/llama.jpg') no-repeat center center fixed;
+#section_1{
+  position: relative;
+  border: 10px;
+  height: 900px;
+  text-align: center;
+  background-image: url("../media/the road.JPG");
+  background-size: cover;
+  @include breakpoint(medium down){
+    height:600px;
+  }
+  @include breakpoint(small down){
+    height: 400px;
+  }
+
+  .pic{
+    display: none;
+  }
+  center{
+    width: inherit;
+    text-align: right;
+    font-size: $size-big;
+    color: black;
+    z-index: 100;
+
+  }
+  h1{
+    width: inherit;
+    font-family: $font-head;
+    position: relative;
+
+    font-size: $size-big;
+    color: white;
+    z-index: 100;
+    transform: translateY(180%);
+
+    @include breakpoint(medium down){
+      font-size: 80px;
+      transform: translateY(100%);
+
+    }
+    @include breakpoint(small down){
+      font-size: 60px;
+      transform: translateY(-20%);
+
+    }
+
+
+    animation: fadeinup 2s;
+    -moz-animation: fadeinup 2s; /* Firefox */
+    -webkit-animation: fadeinup 2s; /* Safari and Chrome */
+    -o-animation: fadeinup 2s; /* Opera */
+    @keyframes fadeinup {
+      from {
+        opacity:0;
+      }
+      to {
+        opacity:1;
+      }
+    }
+    @-moz-keyframes fadeinup { /* Firefox */
+      from {
+        opacity:0;
+      }
+      to {
+        opacity:1;
+      }
+    }
+    @-webkit-keyframes fadeinup { /* Safari and Chrome */
+      from {
+        opacity:0;
+      }
+      to {
+        opacity:1;
+      }
+    }
+    @-o-keyframes fadeinup { /* Opera */
+      from {
+        opacity:0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  p{
+    width: inherit;
+    text-align: center;
+    font-family: $font-head;
+    position: relative;
+    font-size: $size-mid;
+    color: white;
+    z-index: 100;
+    transform: translateY(300%);
+    @include breakpoint(medium down) {
+      font-size: 45px;
+      transform: translateY(220%);
+      top: 0;
+    }
+    @include breakpoint(small down) {
+      font-size: 25px;
+      transform: translateY(-20%);
+      top: 0;
+    }
+  }
+  .dl{
+    height: 4px;
+    opacity: 0.7;
+    background-color: white;
+    width:70px;
+    align: center;
+    z-index: 100;
+  }
 }
 
-.text-center {
-  padding: 30px;
+.s12{
+  height: 400px;
+  position: relative;
+  .ql{
+    position:absolute;
+    width:80px;
+    left: 80px;
+    top: 25px;
+    @include breakpoint(small down){
+      left: 10px;
+      width:65px;
+    }
+  }
+  .qr{
+    position:absolute;
+    width:80px;
+    right: 80px;
+    bottom: 25px;
+    @include breakpoint(small down){
+      right: 10px;
+      width:65px;
+    }
+  }
+  .intro{
+    display: block;
+    text-align: center;
+    width: 70%;
+    height:80%;
+    padding: 20px;
+    @include breakpoint(small down){
+      width: 95%;
+    }
+    p{
+      font-size: $size-p;
+      line-height: 150%;
+      font-family: $font-p;
+      position: relative;
+      top:50%;
+      //transform: translate(0, -50%);
+    }
+  }
 
-  img {
-    border: 1px solid black;
-    max-height: 200px;
+}
+
+.carousels{
+  text-align: center;
+  position: relative;
+  height: 80%;
+  width: 80%;
+  margin: auto;
+  max-width: 100%;
+  @include breakpoint(medium down){
+    width: 100%;
+  }
+
+
+}
+
+#section_3{
+  height: auto;
+  position: relative;
+
+  text-align: center;
+
+
+  h2{
+    font-size: $size-big;
+    font-family: $font-head;
+    color: burlywood;
+    position: relative;
+    z-index: 1;
+    @include title-resize();
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.55);
+    .modal-content {
+      position: fixed;
+      bottom: 20%;
+      padding: 20px;
+      width: 55%;
+      left: 22.5%;
+      @include breakpoint(small down){
+        width: 95%;
+        left: 2.5%;
+      }
+      p{
+        text-align: left;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: $font-p;
+        color: white;
+        font-size: $size-p;
+        line-height: 130%;
+
+      }
+
+
+    }
+  }
+  .foodie {
+    margin: auto;
+    height: 800px;
+    width: 80%;
+    position: relative;
+    background-image: url("../media/sushi.JPG");
+    background-size: cover;
+
+    @include breakpoint(small down){
+      height: 400px;
+      width: 95%;
+
+    }
+
+    .frame {
+
+      background-color: rgba(255, 255, 255, 0.3);
+      width: 80%;
+      margin: auto;
+      z-index: 100;
+      border: 5px;
+      border-style: hidden;
+      border-color: #712a1f;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;;
+      position: relative;
+      top:50%;
+      transform: translateY(-50%);
+      a {
+
+        text-decoration: none;
+        text-align: center;
+        font-family: $font-head;
+        position: relative;
+        font-size: $size-big;
+        font-weight: lighter;
+        line-height:1.8;
+        color: white;
+        @include title-resize();
+        @include breakpoint(small down){
+          line-height: 1.4;
+        }
+
+      }
+    }
+  }
+  video{
+    position: relative;
+    top:40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+    height:auto;
+    @include breakpoint(small down){
+      width: 95%;
+
+    }
+  }
+  p{
+    position: relative;
+    top:50px;
+    margin: 50px;
+    text-align: right;
+    font-size: 40px;
+    color: $dark-blue;
+    font-family: $font-p;
+    @include breakpoint(small down){
+      font-size: 20px;
+    }
+  }
+}
+#section_4{
+  height: 800px;
+  background-image: url("../media/dogs.JPG");
+  background-size: cover;
+  background-attachment: fixed;
+  h2{
+    top: 150px;
+    text-align: center;
+    font-family: $font-head;
+    position: relative;
+    font-size: $size-big;
+    font-weight: lighter;
+    color: white;
+    z-index: 100;
+    @include title-resize();
+    @include breakpoint(small down){
+      top:10%;
+    }
+  }
+  div {
+    background-color: rgba(0,0,0,0.3);
+    position: relative;
+    top: 25%;
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    @include breakpoint(medium down){
+       width: 85%;
+     }
+    @include breakpoint(small down){
+      width: 96%;
+      font-size: 19px;
+      top:18%;
+    }
+    p{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      font-family: 'EB Garamond', serif;
+      color: white;
+      line-height: 150%;
+      font-size: $size-p;
+    }
+
+
+  }
+}
+
+footer{
+  height: 400px;
+  padding: 10%;
+  position: relative;
+  @include breakpoint(small down){
+    height: 770px;
+  }
+  .footer{
+    height: 180px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include breakpoint(small down){
+      top:0;
+      height: auto;
+    }
+    .block{
+      @include breakpoint(small down){
+        padding: 15px;
+      }
+      text-align: center;
+      h2{
+        font-size: $size-p;
+        font-family: $font-p;
+        color: white;
+        @include hover-text($blue);
+      }
+    }
+
+
+  }
+  .social{
+    text-align: right;
+    bottom:30px;
+
+    @include breakpoint(small down){
+      position: relative;
+      text-align: center;
+      right: auto;
+      bottom: auto;
+      top: 15px;
+    }
+
+    i{
+      font-size:30px;
+      color:$blue;
+      padding: 5px;
+    }
+  }
+
+
+  p{
+    position: absolute;
+    left:150px;
+    bottom: 20px;
+    color: gray;
+    font-size: smaller;
+    @include breakpoint(small down){
+      position: relative;
+      left:auto;
+      bottom: auto;
+      top:40px;
+      text-align: center;
+    }
   }
 }

@@ -7,54 +7,222 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick-theme.css"/>
 </head>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico|EB+Garamond|David+Libre" rel="stylesheet">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<nav>
+    <header class="small-centered large-7 large-offset-1">
+        On the Way
+    </header>
+    <div class="nav">
+
+        <!--<p class="welc">On the Way</p>-->
+        <div class="_menu small-10 small-centered medium-6 medium-offset-5 large-4 large-offset-7 columns">
+            <div class = "button1 active-button small-3  columns is-at-bottom">
+                <a href="#section_1">About</a>
+            </div>
+
+            <div class = "button2 small-3  columns is-at-bottom">
+                <a href="#section_2">Places</a>
+            </div>
+
+            <div class = "button3 small-3 columns is-at-bottom">
+                <a href="#section_3">Food</a>
+            </div>
+
+            <div class = "button4 small-3 columns end is-at-bottom">
+                <a href="#section_4">Activities</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
 
 <body>
-  <nav class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">MP2</li>
-        <li>
-          <a href="https://courses.engr.illinois.edu/cs498rk1/" target="_blank">Web Page</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<div style="height: 200px;">
 
-	<div class="row text-center">
-		<h3>LLAMAS</h3>
-	</div>
 
-	<section class="row">
-		<div class="alert columns small-12 large-6">
-			<div class="text-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Domestic_llama_(2009-05-19).jpg"/>
-      </div>
-			<p>The llama is a domesticated South American camelid, widely used as a meat and pack animal by Andean cultures since the Pre-Columbian era.
-      </p>
-      <p>The height of a full-grown, full-size llama is 1.7 to 1.8 m (5.6 to 5.9 ft) tall at the top of the head, and can weigh between 130 and 200 kg (290 and 440 lb). At birth, a baby llama (called a cria) can weigh between 9 and 14 kg (20 and 31 lb). Llamas typically live for 15 to 25 years, with some individuals surviving 30 years or more.</p>
-    </div>
-		<div class="columns small-12 large-6">
-	  	<div class="text-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Machu_Picchu_Llama_2.jpg"/>
-      </div>
-	  	<p>They are very social animals and live with other llamas as a herd. The wool produced by a llama is very soft and lanolin-free. Llamas are intelligent and can learn simple tasks after a few repetitions. When using a pack, they can carry about 25 to 30% of their body weight for 8 to 13 km (5–8 miles).</p>
-      <p>The name llama (in the past also spelled 'lama' or 'glama') was adopted by European settlers from native Peruvians.</p>
-    </div>
-  </section>
+</div>
 
-  <footer class="row text-center">
-    <h5>Content taken from <a href="https://en.wikipedia.org/wiki/Llama">wikipedia</a>.</h5>
-  </footer>
-  <!-- Scripts -->
-  
+<div id = "section_1">
+
+    <div class="greet" id="trigger1">
+        <h1 style="text-align: center">
+            Traveling Albums
+        </h1>
+        <p id="anip">
+            The Advanture is Ahead
+        </p>
+
+    </div>
+    <div class = "pic">
+        <img src="media/chair.JPG" style="width: 100%">
+
+    </div>
+
+
+
+</div>
+<div class="s12" id="section_12" >
+    <img class="ql" src="media/quote1.png"/>
+    <div class="intro small-centered columns" align="center">
+        <p>
+            Hello, I am Wenxin. I like traveling around to taste the refreshing air and spectacular view.
+            Welcome to world in my eyes.
+        </p>
+    </div>
+    <img class="qr" src="media/quote2.png"/>
+</div>
+<div id="section_2">
+    <div class="carousels small-centered columns">
+        <div><img src="media/mirror.JPG" style="max-width:100%"></div>
+        <div><img src="media/mountain.JPG" style="max-width:100%"></div>
+        <div><img src="media/chair.JPG" style="max-width:100%"></div>
+    </div>
+
+</div>
+
+<div id="animate1" style="background-color: #0a0a0a; display:none;width: 200px;height: 200px">
+
+</div>
+
+
+<div id="trigger2" class="spacer s0"></div>
+
+<div id = "section_3" >
+    <h2>Yummy</h2>
+    <div class="m">
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+
+            <!-- Modal content -->
+            <div class="modal-content small-centered columns">
+
+                <p>Unique and beguiling, Japan is a country of binaries.
+                    It straddles both the traditional and ultra-modern, and hosts buzzing cities alongside stunning natural landscapes.
+                    Its food is notoriously nutritious, with a diet based around super-fresh, seasonal products.
+                    We've picked ten dishes to seek out when visiting Japan.
+                    <br>
+                    <br>--bbc good food
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="foodie">
+        <div class="frame">
+            <a href="" id="myBtn" style="text-align: center">
+                Japanese Cuisine
+            </a>
+        </div>
+
+
+    </div>
+
+        <video class="flex-video">
+        <source src="media/sushi.mp4" >
+        Your browser does not support the video tag.
+        </video>
+    <p>
+        --video from youtube
+    </p>
+
+</div>
+
+
+
+
+<div id = "section_4">
+
+
+    <h2>Outdoors</h2>
+
+    <div>
+        <p>You're speeding through Alaskan forest, sitting on a sled that's being pulled by some of Alaska's most powerful creatures.
+            This is dog sledding—and it's not only an Alaskan tradition, but also a state obsession,
+            one that's celebrated every March with the running of the 1,150-mile Iditarod Sled Dog Race from Anchorage to Nome.
+            Taking a dogsledding excursion is a chance to see what the fuss is all about. You'll meet Iditarod racers and their dogs and hear what it's like to run this brutal race.
+            And often, you'll experience the thrill of dogsledding first-hand.
+            <br>
+            <br style="text-align: right">--Alaska.org
+        </p>
+    </div>
+
+
+
+</div>
+
+
+
+<footer style="background-color: #323756">
+    <div class="footer small-10 small-centered">
+        <div class="block medium-4 columns">
+
+            <img  src="media/tips.png " style="width: 50%">
+            <h2>travel tips</h2>
+        </div>
+        <div class="block medium-4 columns">
+
+            <img src="media/attr.png" style="width: 50%">
+            <h2>top attractions</h2>
+        </div>
+        <div class="block medium-4 columns">
+
+            <img src="media/more.png" style="width: 50%">
+            <h2>more</h2>
+
+        </div>
+
+
+    </div>
+
+    <div class="social small-centered columns">
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-tumblr" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+
+
+    </div>
+    <p class="small-centered columns">© 2016 Wenxin Yi</p>
+
+</footer>
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick.css">
+
   <script src="./lib/jquery/dist/jquery.min.js"></script>
   <script src="./lib/foundation-sites/dist/foundation.min.js"></script>
   <script src="./js/script.js"></script>
-  <script>
+  <script src="./lib/slick-carousel/slick/slick.min.js"></script>
+  <script src="./lib/gsap/src/minified/TweenMax.min.js"></script>
+  <script src="./lib/gsap/src/minified/TweenMax.min.js"></script>
+
+  <script src="./lib/velocity/velocity.min.js"></script>
+<script src="./lib/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
+
+
+  <script src="./lib/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+  <script src="./lib/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+  <script src="./lib/scrollmagic/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
+  <script src="./lib/scrollmagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js"></script>
+
+
+
+<script>
     $(document).foundation();
   </script>
   <script src="http://localhost:35729/livereload.js"></script>
 
 </body>
+
 </html>
