@@ -1,20 +1,20 @@
 MP2: Visual Design Research Write Up
-Netid:
+Netid:wyi6
 
 
 Webpage 1:
 
-- [URL]
-- [WRITE_UP]
+ https://2016.fromthefront.it/
+
+
+The website demonstrates designer’s good application of graphic design, but it does not allow too much information on the page since the graphs catches all the attention. It features of a tilted boundary between any 2 sections and even some text is tilted, which I find beautiful and novel. On a mobile view, a two-column sections are combined to one. It is a poster for a conference with attractive picture at top of page followed by introduction of the conference and speakers separated by small tilted paragraphs. Its use of colors are big brown and blue with little bright color decorations, each sections are separated by zigzag tilted lines. I will consider designing a combination of colors and reuse those consistently on one website. Also, I might consider make some elements tilted, which sometime get more attention from users.
 
 
 Webpage 2:
 
-- [URL]
-- [WRITE_UP]
+https://seven-campaign.squarespace.com/templatesThis website is more about presenting the art effect, so it is not that informative. There are many photos of scenery on the page and they are represented with a parallax effect which makes them look 3-dimensional. On mobile view, columns are stacked. It is a profile of the web design company with some projects preview listed. They presented some interesting effect on the first few pages and screen shots of more other projects. They mainly use black and white of different shades to so that their project could be emphasized. I really want to learn more ways to make photos more interesting like what they do.
 
 
 Webpage 3:
 
-- [URL]
-- [WRITE_UP]
+http://www.johos.at/#/en/0/0This website introduces the coffee they grow with really nice photos and transition effect. But the total page is too long to read without a clear index. The transition of scrolling pages and hover effect are consistent and special. They are first cover by a piece of white polygon and then pushed out by next section. All the animations follow the trend the “polygons”. On mobile view, they eliminate the transition effect. Pictures are compact and the whole page content is shorter. On the website, they introducing their coffee from where it is grown to how it is transported. I want to do more customized effect rather than just simple highlighting and fading.

@@ -4,17 +4,16 @@ Netid:
 
 Webpage 1:
 
-- [URL]
-- [WRITE_UP]
+http://www.renaterechner.at/en/
+This web site creates an innovative transition between pages. The next coming page will be represented upside-down and revolve as users scroll it. It is interesting effect but it wastes much space to present information. On smaller screen, it only allows slide left/right to switch view. Each section has a title in centered in a picture of a color block and paragraph in modal pops out when title is clicked. This website will not present much information at the first moment. Users can explore more information by waiting for the animation or clicking the modal button. So it won’t make user overwhelmed by unwanted information. I want to make funky scrolling effect like this one as well as learn to hide my large paragraphs and let users explore as they want.
 
 
 Webpage 2:
 
-- [URL]
-- [WRITE_UP]
-
+http://www.renaterechner.at/en/
+This web site creates an innovative transition between pages. The next coming page will be represented upside-down and revolve as users scroll it. It is interesting effect but it wastes much space to present information. On smaller screen, it only allows slide left/right to switch view. Each section has a title in centered in a picture of a color block and paragraph in modal pops out when title is clicked. This website will not present much information at the first moment. Users can explore more information by waiting for the animation or clicking the modal button. So it won’t make user overwhelmed by unwanted information. I want to make funky scrolling effect like this one as well as learn to hide my large paragraphs and let users explore as they want.
 
 Webpage 3:
 
-- [URL]
-- [WRITE_UP]
+http://www.renaterechner.at/en/
+This web site creates an innovative transition between pages. The next coming page will be represented upside-down and revolve as users scroll it. It is interesting effect but it wastes much space to present information. On smaller screen, it only allows slide left/right to switch view. Each section has a title in centered in a picture of a color block and paragraph in modal pops out when title is clicked. This website will not present much information at the first moment. Users can explore more information by waiting for the animation or clicking the modal button. So it won’t make user overwhelmed by unwanted information. I want to make funky scrolling effect like this one as well as learn to hide my large paragraphs and let users explore as they want.

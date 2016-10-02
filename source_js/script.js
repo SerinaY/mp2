@@ -59,7 +59,6 @@ var main=function() {
 
   var oldwidth=$(window).width();
   $(window).resize(function() {
-    //resize just happened, pixels changed
     var tempW=$(window).width();
     if(tempW!= oldwidth) {
       location.reload();
