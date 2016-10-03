@@ -395,11 +395,12 @@ nav {
 }
 
 footer{
-  height: 400px;
+  height: 500px;
   padding: 10%;
   position: relative;
+
   @include breakpoint(middle down){
-    height: 360px;
+    height: 460px;
   }
   @include breakpoint(small down){
     height: 770px;
